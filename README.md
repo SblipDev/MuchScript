@@ -31,7 +31,6 @@
 
 ```c 
 
-
 # Print
 PRINT("Hello World!")
 
@@ -40,8 +39,10 @@ WOW doge_price = CRYPTO_PRICE("DOGE", "INR")
 
 # If else statement.
 IF doge_price < 30 THEN 
+    PRINT(doge_price)
     PRINT("DOGE SAD.")
 ELSE
+    PRINT(doge_price)
     PRINT("DOGE HAPPY!!!!!!!!")
 END
 
@@ -60,6 +61,54 @@ WOW len_of_names = LEN(names)
 FOR i = 0 TO len_of_names THEN
 	PRINT("Name: " + names/i)
 END
+
+```
+
+<h2>Installation</h2>
+
+<p>Install MuchScript by using pip:</p>
+
+```
+$ pip install muchscript
+```
+<p>Install MuchScript Manually:</p>
+
+```
+$ git clone https://github.com/shaurya-blip/MuchScript.git
+$ cd MuchScript/
+$ python3 setup.py install
+```
+
+<h2>Running</h2>
+
+By installing MuchScript you will install an executable terminal command called 'much' like commands 'python3', 'node', 'go' etc. By running this command you will get:
+
+```
+$ much
+
+MUCHSCRIPT 0.1 (BETA)
+Made by muchscript inc. © 2021
+Inspired by Doge and Elon musk
+MUCH WOW. MUCH COOL. MUCH CRYPTO.
+
+[MUCHSCRIPT]: 
+
+```
+This is the interactive mode of muchscript like the python shell. Here you can perform basic one-line operations. 
+
+If you want to use the scripting mode, make a new file with a .much extension and paste the sample code above in the file. To run the file just type out:
+
+```
+$ much [filename].much
+
+Hello World!
+27.4001
+DOGE HAPPY!!!!!!!!
+3
+Name: Jose
+Name: Maria
+Name: John
+Name: Mary
 
 ```
 
