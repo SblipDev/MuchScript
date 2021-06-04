@@ -25,7 +25,8 @@
 <div style="text-align:center;">
 
 # MuchScript 0.1.3
-
+https://muchscript.sblip.dev/
+  
 MADE BY SHAURYA_BLIP
 
 INSPIRED BY DOGE AND DOEGFATHER ELON MUSK
