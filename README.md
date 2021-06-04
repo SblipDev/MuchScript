@@ -27,6 +27,14 @@
 <p style="font-family:Comic Sans MS;"> MUCH WOW. MUCH COOL. MUCH CRYPTO. </p><br>
 </div>
 
+<h2>Sample Code</h2>
+
+```c 
+
+PRINT("Hello World!")
+
+```
+
 <h2 style="text-align:center;">Made with love and Python by Sblip.</h2>
 <p style="font-family:Comic Sans MS;text-align:center;">Feel free to contribute. Needs much help this project does.</p>
 
