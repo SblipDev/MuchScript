@@ -10,13 +10,21 @@
             text-align:center;
         }
 
+        .font{
+            font-family: 'Comic Sans MS';
+        }
+
         code{
             text-align:left;
+            border-radius: 5px;
         }
 
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/default.min.css">
 </head>
-<body>
+<body class="container"><br>
     <div style="text-align:center;">
         ░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░<br>
         ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░<br>
@@ -46,9 +54,9 @@
         <p style="font-family:Comic Sans MS;"> MUCH WOW. MUCH COOL. MUCH CRYPTO. </p><br>
     </div>
     
-    <h2>Sample Code</h2>
+    <h2>Syntax</h2>
     
-    <pre><code class="lang-c"><span class="hljs-meta">
+    <pre style="text-align:left;"><code class="lang-c" style="text-align:left;"><span class="hljs-meta">
     # Print</span>
     <span class="hljs-built_in">PRINT</span>(<span class="hljs-string">"Hello World!"</span>)<span class="hljs-meta">
     
@@ -66,7 +74,7 @@
     
     # Lambda (Almost..)</span>
     FUN add(num1, num2) -&gt; num1 + num2<span class="hljs-meta">
-    
+
     # Using the lambda function</span>
     <span class="hljs-built_in">PRINT</span>(add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>))<span class="hljs-meta">
     
@@ -80,21 +88,22 @@
         <span class="hljs-built_in">PRINT</span>(<span class="hljs-string">"Name: "</span> + names/i)
     <span class="hljs-keyword">END</span>
     </code></pre>
-    <h2>Installation</h2>
+    <h2 class="font">Installation</h2>
     
-    <p>Install MuchScript by using pip:</p>
+    <p class="font">Install MuchScript by using pip:</p>
     
     <pre><code>$ pip <span class="hljs-keyword">install</span> muchscript
     </code></pre>
-    <p>Install MuchScript Manually:</p>
+    <p class="font">Install MuchScript Manually:</p>
     
-    <pre><code>$ git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/shaurya-blip/MuchScript.git
+    <pre><code>
+    $ git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/shaurya-blip/MuchScript.git
     $ <span class="hljs-keyword">cd</span> MuchScript/
     $ <span class="hljs-keyword">python3</span> setup.<span class="hljs-keyword">py</span> install
     </code></pre>
-    <h2>Running</h2>
+    <h2 class="font">Running</h2>
     
-    <p>By installing MuchScript you will install an executable terminal command called &#39;much&#39; like commands
+    <p class="font">By installing MuchScript you will install an executable terminal command called &#39;much&#39; like commands
         &#39;python3&#39;, &#39;node&#39;, &#39;go&#39; etc. By running this command you will get:</p>
     <pre><code>$ much
     
@@ -105,8 +114,8 @@
     
     [MUCHSCRIPT]:
     </code></pre>
-    <p>This is the interactive mode of muchscript like the python shell. Here you can perform basic one-line operations.
-    </p>
+    <p class="font">This is the interactive mode of muchscript like the python shell. Here you can perform basic one-line operations.
+    </p class="font">
     <p>If you want to use the scripting mode, make a new file with a .much extension and paste the sample code above in the
         file. To run the file just type out:</p>
     <pre><code>$ much [filename].much
@@ -121,12 +130,12 @@
     Name: Mary
     </code></pre>
     <p>
-    <h2 style="text-align:center;">Made with love and Python by Sblip.</h2>
+    <h2 style="text-align:center;" class="font">Made with love and Python by Sblip.</h2>
     </p>
     <p style="font-family:Comic Sans MS;text-align:center;">Feel free to contribute. Needs much help this project does.</p>
     
     <p style="font-family:Comic Sans MS;text-align:center;">© MuchScript 2021 MIT License</p>
+    <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
 </html>
