@@ -22,3 +22,5 @@ def get_crypto(crypto, realcurrency):
     price_inr = float(get_crypto_price(crypto.lower()+'inr')) 
     price_in_default = float(float(price_inr) / float(get_price(realcurrency)))
     return price_in_default
+
+
