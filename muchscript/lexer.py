@@ -200,3 +200,11 @@ class Lexer:
       self.advance()
 
     self.advance()
+
+'''
+YOU HAVE REACHED THE END OF THIS FILE!
+HAVE A GOOD DAY!
+THANKS FOR CHECKING OUT THIS CODE!
+THANKS AGAIN!
+PEACE! 
+'''

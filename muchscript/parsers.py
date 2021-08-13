@@ -737,3 +737,13 @@ class Parser:
       left = BinOpNode(left, op_tok, right)
 
     return res.success(left)
+
+'''
+YOU HAVE REACHED THE END OF THIS FILE!
+BOY 740 lines before this! That's insane!
+Support the programmer's work here -> https://github.com/shaurya-blip/MuchScript/
+HAVE A GOOD DAY!
+THANKS FOR CHECKING OUT THIS CODE!
+THANKS AGAIN!
+PEACE! 
+'''

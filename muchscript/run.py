@@ -1,3 +1,9 @@
+
+# Where the run() function lives
+# Also where all the builtin functions
+# Are registered.
+# Also some inbuilt variables
+
 from .error_printing import *
 from .errors import *
 from .tokens import *
@@ -34,6 +40,7 @@ BuiltInFunction.crypto_price = BuiltInFunction("crypto_price")
 
 global_symbol_table = SymbolTable()
 global_symbol_table.set("NULL", Number.null)
+global_symbol_table.set("MEANING_OF_LIFE", 42)
 global_symbol_table.set("FALSE", Number.false)
 global_symbol_table.set("TRUE", Number.true)
 global_symbol_table.set("MATH_PI", Number.math_PI)

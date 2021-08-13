@@ -51,8 +51,8 @@ try:
 except IndexError:
     # pass
     print("")
-    print("MUCHSCRIPT 0.1 (BETA)")
-    print("Made by muchscript inc. © 2021")
+    print("MUCHSCRIPT 0.1.3 (BETA)")
+    print("Made by Shaurya Pratap Singh © 2021")
     print("Inspired by Doge and Elon musk")
     print("MUCH WOW. MUCH COOL. MUCH CRYPTO.")
     print("")

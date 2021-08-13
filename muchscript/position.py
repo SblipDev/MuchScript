@@ -1,4 +1,6 @@
 
+# This is the position class
+# Really really helpful
 
 class Position:
   def __init__(self, idx, ln, col, fn, ftxt):
@@ -20,4 +22,3 @@ class Position:
 
   def copy(self):
     return Position(self.idx, self.ln, self.col, self.fn, self.ftxt)
-  

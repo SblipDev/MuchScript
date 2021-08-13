@@ -50,3 +50,11 @@ class RTError(Error):
       ctx = ctx.parent
 
     return 'Traceback (most recent call last):\n' + result
+
+'''
+YOU HAVE REACHED THE END OF THIS FILE!
+HAVE A GOOD DAY!
+THANKS FOR CHECKING OUT THIS CODE!
+THANKS AGAIN!
+PEACE! 
+'''

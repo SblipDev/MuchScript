@@ -152,7 +152,7 @@ class BuiltInFunction(BaseFunction):
   def __repr__(self):
     return f"<built-in function {self.name}>"
 
-  # DOGESCRIPT SPECIALS
+  # A Muchcript special function
   
   def execute_crypto_price(self, exec_ctx):
       crypto = str(exec_ctx.symbol_table.get('crypto'))
@@ -161,22 +161,31 @@ class BuiltInFunction(BaseFunction):
       return RTResult().success(Number(price))
   execute_crypto_price.arg_names = ['crypto', 'realcurrency']
   
-  # NORMIES
+  # Other basic builtin functions needed for coding... :)
   
+  # Print function 
+  # This is used to print a string, number, list, function, etc to the terminal
+  # Similar to the print() function in python
   def execute_print(self, exec_ctx):
     print(str(exec_ctx.symbol_table.get('value')))
     return RTResult().success(Number.null)
   execute_print.arg_names = ['value']
   
+  # Same as the print function
+  # But is more prefered for printing string
   def execute_print_ret(self, exec_ctx):
     return RTResult().success(String(str(exec_ctx.symbol_table.get('value'))))
   execute_print_ret.arg_names = ['value']
   
+  # Input function
+  # This is the input function, used to get input from the user from the console
   def execute_input(self, exec_ctx):
     text = input(str(exec_ctx.symbol_table.get('text')))
     return RTResult().success(String(text))
   execute_input.arg_names = ['text']
   
+  # Same as the input function but used to get numbers only.
+  # Does not quit until you input a number
   def execute_input_int(self, exec_ctx):
     while True:
       text = input()
@@ -188,31 +197,37 @@ class BuiltInFunction(BaseFunction):
     return RTResult().success(Number(number))
   execute_input_int.arg_names = ['text']
 
+  # Used to clear the console window
   def execute_clear(self, exec_ctx):
-    os.system('cls' if os.name == 'nt' else 'cls') 
+    os.system('cls' if os.name == 'nt' else 'clear') 
     return RTResult().success(Number.null)
   execute_clear.arg_names = []
 
+  # Checks if the object is number
   def execute_is_number(self, exec_ctx):
     is_number = isinstance(exec_ctx.symbol_table.get("value"), Number)
     return RTResult().success(Number.true if is_number else Number.false)
   execute_is_number.arg_names = ["value"]
 
+  # Checks if the object is string
   def execute_is_string(self, exec_ctx):
     is_number = isinstance(exec_ctx.symbol_table.get("value"), String)
     return RTResult().success(Number.true if is_number else Number.false)
   execute_is_string.arg_names = ["value"]
 
+  # Checks if the object is list
   def execute_is_list(self, exec_ctx):
     is_number = isinstance(exec_ctx.symbol_table.get("value"), List)
     return RTResult().success(Number.true if is_number else Number.false)
   execute_is_list.arg_names = ["value"]
 
+  # Checks if the object is function
   def execute_is_function(self, exec_ctx):
     is_number = isinstance(exec_ctx.symbol_table.get("value"), BaseFunction)
     return RTResult().success(Number.true if is_number else Number.false)
   execute_is_function.arg_names = ["value"]
 
+  # Used to append objects to lists
   def execute_append(self, exec_ctx):
     list_ = exec_ctx.symbol_table.get("list")
     value = exec_ctx.symbol_table.get("value")
@@ -228,6 +243,7 @@ class BuiltInFunction(BaseFunction):
     return RTResult().success(Number.null)
   execute_append.arg_names = ["list", "value"]
 
+  # Used to remove objects from list
   def execute_pop(self, exec_ctx):
     list_ = exec_ctx.symbol_table.get("list")
     index = exec_ctx.symbol_table.get("index")
@@ -257,6 +273,7 @@ class BuiltInFunction(BaseFunction):
     return RTResult().success(element)
   execute_pop.arg_names = ["list", "index"]
 
+  # Used to append two lists together.
   def execute_extend(self, exec_ctx):
     listA = exec_ctx.symbol_table.get("listA")
     listB = exec_ctx.symbol_table.get("listB")
@@ -279,6 +296,7 @@ class BuiltInFunction(BaseFunction):
     return RTResult().success(Number.null)
   execute_extend.arg_names = ["listA", "listB"]
 
+  # It is used to get the number of objects in the list. Currently only works for lists.
   def execute_len(self, exec_ctx):
     list_ = exec_ctx.symbol_table.get("list")
 
@@ -292,6 +310,7 @@ class BuiltInFunction(BaseFunction):
     return RTResult().success(Number(len(list_.elements)))
   execute_len.arg_names = ["list"]
 
+  # Used to run files from within the code.
   def execute_run(self, exec_ctx):
     fn = exec_ctx.symbol_table.get("fn")
 
@@ -326,3 +345,11 @@ class BuiltInFunction(BaseFunction):
 
     return RTResult().success(Number.null)
   execute_run.arg_names = ["fn"]
+
+'''
+YOU HAVE REACHED THE END OF THIS FILE!
+HAVE A GOOD DAY!
+THANKS FOR CHECKING OUT THIS CODE!
+THANKS AGAIN!
+PEACE! 
+'''
