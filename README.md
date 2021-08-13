@@ -60,6 +60,7 @@ MUCH WOW. MUCH COOL. MUCH CRYPTO.
 
         # List of names
         WOW names = ["Jose", "Maria", "John", "Mary"]
+        # Gets the length of the list
         WOW len_of_names = LEN(names)
 
         # Prints all the names in the list
@@ -76,9 +77,9 @@ Install MuchScript by using pip:
 
 Install MuchScript Manually:
 
-        $ git clone https://github.com/shaurya-blip/MuchScript.git
-        $ cd MuchScript/
-        $ python3 setup.py install
+    $ git clone https://github.com/shaurya-blip/MuchScript.git
+    $ cd MuchScript/
+    $ python3 setup.py install
 
 ## Running
 
@@ -113,5 +114,3 @@ If you want to use the scripting mode, make a new file with a .much extension an
 Feel free to contribute. Needs much help this project does.
 
 © MuchScript 2021 MIT License
-
-<script>hljs.highlightAll();</script>
