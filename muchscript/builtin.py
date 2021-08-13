@@ -1,13 +1,17 @@
 
+# This is where all the built in functions live
+# Edit with care lol
+# © Copyrights reserved 2021
+
 from .runtime import *
 from .datatypes import *
 from .errors import *
 import os
-# from muchscript import run
 from .value import Value
 from .import interprete
 from .functions import *
 
+# Context class
 class Context:
   def __init__(self, display_name, parent=None, parent_entry_pos=None):
     self.display_name = display_name
@@ -15,6 +19,7 @@ class Context:
     self.parent_entry_pos = parent_entry_pos
     self.symbol_table = None
 
+# This is the symbol table where the variables are stored.
 class SymbolTable:
   def __init__(self, parent=None):
     self.symbols = {}
@@ -32,17 +37,21 @@ class SymbolTable:
   def remove(self, name):
     del self.symbols[name]
 
-
 class BaseFunction(Value):
+
+  # __init__ function 
+  # arguments: name
   def __init__(self, name):
     super().__init__()
     self.name = name or "<anonymous>"
 
+  # Generates a new context class
   def generate_new_context(self):
     new_context = Context(self.name, self.context, self.pos_start)
     new_context.symbol_table = SymbolTable(new_context.parent.symbol_table)
     return new_context
 
+  # This checks the list of args below the builtin function  
   def check_args(self, arg_names, args):
     res = RTResult()
 
@@ -62,6 +71,7 @@ class BaseFunction(Value):
 
     return res.success(None)
 
+  # Populates args
   def populate_args(self, arg_names, args, exec_ctx):
     for i in range(len(args)):
       arg_name = arg_names[i]
@@ -69,6 +79,7 @@ class BaseFunction(Value):
       arg_value.set_context(exec_ctx)
       exec_ctx.symbol_table.set(arg_name, arg_value)
 
+  # Checks args then populate args
   def check_and_populate_args(self, arg_names, args, exec_ctx):
     res = RTResult()
     res.register(self.check_args(arg_names, args))
@@ -78,6 +89,7 @@ class BaseFunction(Value):
 
 
 
+# Function class inheriting from BaseFunction 
 class Function(BaseFunction):
   def __init__(self, name, body_node, arg_names, should_auto_return):
     super().__init__(name)
@@ -109,7 +121,7 @@ class Function(BaseFunction):
     return f"<function {self.name}>"
 
 
-
+# Where all the functions live together!
 class BuiltInFunction(BaseFunction):
   def __init__(self, name):
     super().__init__(name)
