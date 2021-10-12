@@ -33,6 +33,8 @@ INSPIRED BY DOGE AND DOEGFATHER ELON MUSK
 
 MUCH WOW. MUCH COOL. MUCH CRYPTO.
 
+Also this language is a fork of https://github.com/davidcallanan/py-myopl-code by @davidcallanan, with some certain features added.
+  
 </div>
 
 ```c
