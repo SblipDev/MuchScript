@@ -77,7 +77,7 @@ Install MuchScript by using pip:
 
     $ pip install muchscript
 
-Install MuchScript Manually:
+Install MuchScript using git(also with the latest updates (recommended)):
 
     $ git clone https://github.com/shaurya-blip/MuchScript.git
     $ cd MuchScript/
