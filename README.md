@@ -24,7 +24,7 @@
 
 <div style="text-align:center;">
 
-# MuchScript 0.1.3
+# MuchScript 0.1.4
 https://muchscript.sblip.dev/
   
 MADE BY SHAURYA_BLIP
