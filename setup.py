@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="muchscript",
-    version="0.1.3",
+    version="0.1.4",
     description="A crypto language inspired by Doge and the Dogefather.",
     long_description=README,
     long_description_content_type="text/markdown",
