@@ -1,35 +1,18 @@
   
 
-<div style="text-align:center;">
-░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░  <br>
-░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░   <br>
-░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░   <br>
-░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░   <br>
-░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░   <br>
-░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░   <br>
-░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌░░   <br>
-░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐░░   <br>
-░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌░   <br>
-░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌░   <br>
-▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐░   <br>
-▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌   <br>
-▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐░   <br>
-░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌░   <br>
-░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░   <br>
-░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░   <br>
-░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░   <br>
-░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░   <br>
-░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░   <br>
+<div align="center">
+
+  ![Alt Text](Muchscript.gif)
+  
 </div> <br>
 
 <div style="text-align:center;">
 
-# MuchScript 0.1.4
+# MuchScript
 https://muchscript.sblip.dev/
   
-MADE BY SHAURYA_BLIP
-
-INSPIRED BY DOGE AND DOEGFATHER ELON MUSK
+Interpreter Programming Language made by SblipDev.
+Inspired by the DOGE meme.
 
 MUCH WOW. MUCH COOL. MUCH CRYPTO.
 
@@ -38,37 +21,37 @@ Also this language is a fork of https://github.com/davidcallanan/py-myopl-code b
 </div>
 
 ```c
-    # Print
-    PRINT("Hello World!")
+# Print
+PRINT("Hello World!")
 
-    # Variable       Method for finding out the price of crypto
-    WOW doge_price = CRYPTO_PRICE("DOGE", "INR")
+# Variable       Method for finding out the price of crypto
+WOW doge_price = CRYPTO_PRICE("DOGE", "INR")
 
-    # If else statement.
-    IF doge_price < 30 THEN 
-        PRINT(doge_price)
-        PRINT("DOGE SAD.")
-    ELSE
-        PRINT(doge_price)
-        PRINT("DOGE HAPPY!!!!!!!!")
-    END
+# If else statement.
+IF doge_price < 30 THEN 
+   PRINT(doge_price)
+   PRINT("DOGE SAD.")
+ELSE
+   PRINT(doge_price)
+   PRINT("DOGE HAPPY!!!!!!!!")
+END
 
-    # Lambda (Almost..)
-    FUN add(num1, num2) -> num1 + num2
+# Lambda (Almost..)
+FUN add(num1, num2) -> num1 + num2
 
-    # Using the lambda function
-    PRINT(add(1,2))
+# Using the lambda function
+PRINT(add(1,2))
 
-    # List of names
-    WOW names = ["Jose", "Maria", "John", "Mary"]
-    # Gets the length of the list
-    WOW len_of_names = LEN(names)
+# List of names
+WOW names = ["Jose", "Maria", "John", "Mary"]
+# Gets the length of the list
+WOW len_of_names = LEN(names)
 
-    # Prints all the names in the list
-    # We get object from list by /num not [num]
-    FOR i = 0 TO len_of_names THEN
-        PRINT("Name: " + names/i)
-    END
+# Prints all the names in the list
+# We get object from list by /num not [num]
+FOR i = 0 TO len_of_names THEN
+    PRINT("Name: " + names/i)
+END
 ```
 
 ## Installation
