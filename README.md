@@ -60,12 +60,6 @@ Install MuchScript by using pip:
 
     $ pip install muchscript
 
-Install MuchScript using git(also with the latest updates (recommended)):
-
-    $ git clone https://github.com/shaurya-blip/MuchScript.git
-    $ cd MuchScript/
-    $ python3 setup.py install
-
 ## Running
 
 By installing MuchScript you will install an executable terminal command called 'much' like commands 'python3', 'node', 'go' etc. By running this command you will get:
